@@ -1,0 +1,60 @@
+####################### .gitignore for student projects ######################
+
+## These are just guideline suggestions.                                    ##
+## Feel free to add more patterns, or remove some, if required.             ##
+
+## Gitignores help keeping GIT clean, stable, and usable.                   ##
+## It will e.g. exclude large binary files and redundant logs from the repo.##
+## Adding this file to a repo, will trigger a warning if a pattern matches. ##
+
+
+# Sometimes, binaries are reasonable
+# Typically, sources together with a build script or build commands is better
+*.ba
+*.bin
+*.bo
+*build/
+*.class
+*.o
+bitstream/
+
+# Kernel Module Compile Results
+*.cmd
+dkms.conf
+*.ko
+*.mod*
+modules.order
+Module.symvers
+Mkfile.old
+.tmp_versions/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.vcd
+
+# Package Files
+# If there is no other option, please use GIT LFS Large File Storage
+*.ear
+*.jar
+*.nar
+*.rar
+*.tar.gz
+*.war
+*.zip
+*.7z
+
+# Vivado finisihed projects will include the following files
+# Instead, please create (Make / bash / Tcl) scripts, which allow us to finally reproduce and rebuild your project.
+*.bit
+*.cache
+*.gen
+*.hw
+*.ip_user_files
+*.runs
+*.sim
+*.srcs
+*.xpr
+
+# on our own system .tcl file is not appliable
+*.tcl
